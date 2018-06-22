@@ -16,13 +16,13 @@ export default async (dir) => {
     if (await fs.pathExists(testPath)) {
       const packageJSON = await readPackageJSON(mDir);
 
-      if (packageJSON.devDependencies && packageJSON.devDependencies['electron-prebuilt-compile']) {
-        const version = packageJSON.devDependencies['electron-prebuilt-compile'];
+      if (packageJSON.devDependencies && packageJSON.devDependencies['@barco/electron-prebuilt-compile']) {
+        const version = packageJSON.devDependencies['@barco/electron-prebuilt-compile'];
         if (!isExactVersion(version)) {
-          throw `You must depend on an EXACT version of "electron-prebuilt-compile" not a range (got "${version}")`;
+          throw `You must depend on an EXACT version of "@barco/electron-prebuilt-compile" not a range (got "${version}")`;
         }
       } else {
-        throw 'You must depend on "electron-prebuilt-compile" in your devDependencies';
+        throw 'You must depend on "@barco/electron-prebuilt-compile" in your devDependencies';
       }
 
       if (packageJSON.config && packageJSON.config.forge) {

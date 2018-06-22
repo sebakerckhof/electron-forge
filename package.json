@@ -1,6 +1,9 @@
 {
-  "name": "electron-forge",
+  "name": "@barco/electron-forge",
   "version": "5.2.2",
+  "publishConfig": {
+    "registry": "https://bin.barco.com/artifactory/api/npm/npm-local"
+  },
   "description": "A complete tool for building modern Electron applications",
   "repository": "https://github.com/electron-userland/electron-forge",
   "main": "dist/api/index.js",

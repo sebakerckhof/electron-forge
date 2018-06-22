@@ -16,7 +16,7 @@
 ##### New Features
 
 * **publisher:**  Allow custom release channel for ERS (#474) ([2f1888e7](https://github.com/electron-userland/electron-forge/commit/2f1888e7))
-* **generic:**  allow specifying electron-prebuilt-compile via URL ([05874ae9](https://github.com/electron-userland/electron-forge/commit/05874ae9))
+* **generic:**  allow specifying @barco/electron-prebuilt-compile via URL ([05874ae9](https://github.com/electron-userland/electron-forge/commit/05874ae9))
 
 ##### Refactors
 
@@ -558,7 +558,7 @@
   * fix forge config deletion tests on all platforms ([7b99e847](https://github.com/electron-userland/electron-forge/commit/7b99e847))
   * fix test failures caused by config structure changes ([3a3cdfdb](https://github.com/electron-userland/electron-forge/commit/3a3cdfdb))
 * **importer:**
-  * install electron-prebuilt-compile as devDep ([e80be32a](https://github.com/electron-userland/electron-forge/commit/e80be32a))
+  * install @barco/electron-prebuilt-compile as devDep ([e80be32a](https://github.com/electron-userland/electron-forge/commit/e80be32a))
   * check updateScripts value at script install vs deps removal ([4942cb60](https://github.com/electron-userland/electron-forge/commit/4942cb60))
   * ensure electronName exists before resolving its path ([9dcf2ec5](https://github.com/electron-userland/electron-forge/commit/9dcf2ec5))
 * **publisher:** throw an exception if a GitHub token isn't specified ([bc299b7a](https://github.com/electron-userland/electron-forge/commit/bc299b7a))
@@ -1062,7 +1062,7 @@
   * move electron-installer-debian to optional deps so that installs work on windows ([661b1eb6](https://github.com/electron-userland/electron-forge/commit/661b1eb6))
   * correct path/arch of generated deb file ([63ff52b2](https://github.com/electron-userland/electron-forge/commit/63ff52b2))
 * **generic:** fix package.json warning about repository ([f21a87aa](https://github.com/electron-userland/electron-forge/commit/f21a87aa))
-* **packager:** throw error when electron-prebuilt-compile is not found ([23449956](https://github.com/electron-userland/electron-forge/commit/23449956))
+* **packager:** throw error when @barco/electron-prebuilt-compile is not found ([23449956](https://github.com/electron-userland/electron-forge/commit/23449956))
 
 ##### Refactors
 

@@ -143,7 +143,7 @@ export default async (providedOptions = {}) => {
   if (electronName) {
     const electronPackageJSON = await readPackageJSON(path.resolve(dir, 'node_modules', electronName));
     electronVersion = electronPackageJSON.version;
-    packageJSON.devDependencies['electron-prebuilt-compile'] = electronVersion;
+    packageJSON.devDependencies['@barco/electron-prebuilt-compile'] = electronVersion;
   }
 
   await writeChanges();
@@ -175,7 +175,7 @@ export default async (providedOptions = {}) => {
 
     d('installing exactDevDependencies');
     await installDepList(dir, exactDevDeps.map((dep) => {
-      if (dep === 'electron-prebuilt-compile') {
+      if (dep === '@barco/electron-prebuilt-compile') {
         return `${dep}@${electronVersion || 'latest'}`;
       }
 
@@ -230,7 +230,7 @@ export default async (providedOptions = {}) => {
   info(interactive, `
 
 We have ATTEMPTED to convert your app to be in a format that electron-forge understands.
-Nothing much will have changed but we added the ${'"electron-prebuilt-compile"'.cyan} dependency.  This is \
+Nothing much will have changed but we added the ${'"@barco/electron-prebuilt-compile"'.cyan} dependency.  This is \
 the dependency you must version bump to get newer versions of Electron.
 
 

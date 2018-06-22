@@ -14,6 +14,6 @@
     "forge": "./forge.config.js"
   },
   "devDependencies": {
-    "electron-prebuilt-compile": "9.9.9"
+    "@barco/electron-prebuilt-compile": "9.9.9"
   }
 }
