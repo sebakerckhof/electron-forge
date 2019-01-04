@@ -198,7 +198,7 @@ You can set `electronPackagerConfig` with any of the options from
 * `arch` (use the `--arch` Forge command line argument instead, so it's available to all of Forge)
 * `asar.unpack` (use `asar.unpackDir` instead)
 * `dir` (use the `cwd` Forge command line argument instead, so it's available to all of Forge)
-* `electronVersion` (uses the exact version specified for `@barco/electron-prebuilt-compile` in your `devDependencies`)
+* `electronVersion` (uses the exact version specified for `electron-prebuilt-compile` in your `devDependencies`)
 * `out`
 * `platform` (use the `--platform` Forge command line argument instead, so it's available to all of Forge)
 * `quiet`
@@ -206,7 +206,7 @@ You can set `electronPackagerConfig` with any of the options from
 You can set `electronRebuildConfig` with any of the options from
 [Electron Rebuild](https://github.com/electron/electron-rebuild#how-can-i-integrate-this-into-grunt--gulp--whatever), except:
 
-* `electronVersion`/`--version` (uses the exact version specified for `@barco/electron-prebuilt-compile` in your `devDependencies`)
+* `electronVersion`/`--version` (uses the exact version specified for `electron-prebuilt-compile` in your `devDependencies`)
 * `arch`/`--arch` (use the `--arch` Forge command line argument instead, so it's available to all of Forge)
 * `buildPath`/`--module-dir` (uses your project's `node_modules`)
 
