@@ -7,7 +7,7 @@ const d = debug('electron-forge:util');
 export default async (projectDir) => {
   let result = null;
 
-  const modulesToExamine = ['@barco/electron-prebuilt-compile', 'electron', 'electron-prebuilt'];
+  const modulesToExamine = ['@sebak/electron-prebuilt-compile', 'electron', 'electron-prebuilt'];
   for (const moduleName of modulesToExamine) {
     const moduleDir = path.join(projectDir, 'node_modules', moduleName);
     try {

@@ -80,7 +80,7 @@ export default async (providedOptions = {}) => {
   await runHook(forgeConfig, 'generateAssets');
 
   await asyncOra('Launching Application', async () => {
-    spawned = spawn(process.execPath, [path.resolve(dir, 'node_modules/@barco/electron-prebuilt-compile/lib/cli'), appPath].concat(args), spawnOpts);
+    spawned = spawn(process.execPath, [path.resolve(dir, 'node_modules/@sebak/electron-prebuilt-compile/lib/cli'), appPath].concat(args), spawnOpts);
   });
 
   return spawned;

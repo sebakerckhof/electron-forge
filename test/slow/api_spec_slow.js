@@ -57,7 +57,7 @@ describe(`electron-forge API (with installer=${nodeInstaller})`, () => {
 
       it('should have installed the initial node_modules', async () => {
         expectProjectPathExists('node_modules', 'folder');
-        expect(await fs.pathExists(path.resolve(dir, 'node_modules/@barco/electron-prebuilt-compile')), '@barco/electron-prebuilt-compile should exist').to.equal(true);
+        expect(await fs.pathExists(path.resolve(dir, 'node_modules/@sebak/electron-prebuilt-compile')), '@sebak/electron-prebuilt-compile should exist').to.equal(true);
         expect(await fs.pathExists(path.resolve(dir, 'node_modules/babel-core')), 'babel-core should exist').to.equal(true);
         expect(await fs.pathExists(path.resolve(dir, 'node_modules/electron-forge')), 'electron-forge should exist').to.equal(true);
       });

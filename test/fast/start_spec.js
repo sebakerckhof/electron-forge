@@ -36,7 +36,7 @@ describe('start', () => {
     });
     expect(spawnStub.callCount).to.equal(1);
     expect(spawnStub.firstCall.args[0]).to.equal(process.execPath);
-    expect(spawnStub.firstCall.args[1][0]).to.contain(`@barco/electron-prebuilt-compile${path.sep}lib${path.sep}cli`);
+    expect(spawnStub.firstCall.args[1][0]).to.contain(`@sebak/electron-prebuilt-compile${path.sep}lib${path.sep}cli`);
     expect(spawnStub.firstCall.args[2]).to.have.property('cwd', __dirname);
     expect(spawnStub.firstCall.args[2].env).to.not.have.property('ELECTRON_ENABLE_LOGGING');
   });
@@ -48,7 +48,7 @@ describe('start', () => {
     });
     expect(spawnStub.callCount).to.equal(1);
     expect(spawnStub.firstCall.args[0]).to.equal(process.execPath);
-    expect(spawnStub.firstCall.args[1][0]).to.contain(`@barco/electron-prebuilt-compile${path.sep}lib${path.sep}cli`);
+    expect(spawnStub.firstCall.args[1][0]).to.contain(`@sebak/electron-prebuilt-compile${path.sep}lib${path.sep}cli`);
     expect(spawnStub.firstCall.args[1][1]).to.equal('.');
   });
 
@@ -60,7 +60,7 @@ describe('start', () => {
     });
     expect(spawnStub.callCount).to.equal(1);
     expect(spawnStub.firstCall.args[0]).to.equal(process.execPath);
-    expect(spawnStub.firstCall.args[1][0]).to.contain(`@barco/electron-prebuilt-compile${path.sep}lib${path.sep}cli`);
+    expect(spawnStub.firstCall.args[1][0]).to.contain(`@sebak/electron-prebuilt-compile${path.sep}lib${path.sep}cli`);
     expect(spawnStub.firstCall.args[1][1]).to.equal('/path/to/app.js');
   });
 
@@ -73,7 +73,7 @@ describe('start', () => {
     });
     expect(spawnStub.callCount).to.equal(1);
     expect(spawnStub.firstCall.args[0]).to.equal(process.execPath);
-    expect(spawnStub.firstCall.args[1][0]).to.contain(`@barco/electron-prebuilt-compile${path.sep}lib${path.sep}cli`);
+    expect(spawnStub.firstCall.args[1][0]).to.contain(`@sebak/electron-prebuilt-compile${path.sep}lib${path.sep}cli`);
     expect(spawnStub.firstCall.args[2].env).to.have.property('ELECTRON_ENABLE_LOGGING', true);
   });
 

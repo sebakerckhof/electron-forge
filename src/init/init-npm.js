@@ -12,7 +12,7 @@ const d = debug('electron-forge:init:npm');
 
 export const deps = ['electron-compile', 'electron-squirrel-startup'];
 export const devDeps = ['babel-preset-env', 'babel-preset-react', 'babel-plugin-transform-async-to-generator', 'electron-forge'];
-export const exactDevDeps = ['@barco/electron-prebuilt-compile'];
+export const exactDevDeps = ['@sebak/electron-prebuilt-compile'];
 export const standardDeps = ['standard'];
 export const airbnbDeps = ['eslint@^3', 'eslint-config-airbnb@^15', 'eslint-plugin-import@^2',
   'eslint-plugin-jsx-a11y@^5', 'eslint-plugin-react@^7'];
@@ -69,7 +69,7 @@ export default async (dir, lintStyle) => {
     // actual version of Electron that we installed
     const content = await fs.readJson(path.join(dir, '.compilerc'), 'utf8');
     const electronPrebuilt = require(
-      path.join(dir, 'node_modules', '@barco/electron-prebuilt-compile', 'package.json'));
+      path.join(dir, 'node_modules', '@sebak/electron-prebuilt-compile', 'package.json'));
 
     for (const profile of ['development', 'production']) {
       const envTarget = content.env[profile]['application/javascript'].presets.find(x => x[0] === 'env');
